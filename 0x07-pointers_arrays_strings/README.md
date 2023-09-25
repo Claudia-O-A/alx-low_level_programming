@@ -14,4 +14,4 @@ This README provides an overview of the project, including various C files with 
 - **100-set_string.c:** Sets the value of a char pointer.
 
 ### Additional Information
-- An advanced task involves obtaining a password for the [crackme2](https://github.com/holbertonschool/0x06.c) executable, with detailed instructions provided.
+- An advanced task involves obtaining a password for the [crackme2](https://github.com/Claudia-O-A/0x06.c) executable, with detailed instructions provided.
