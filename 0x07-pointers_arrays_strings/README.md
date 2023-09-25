@@ -12,6 +12,4 @@ This README provides an overview of the project, including various C files with 
 - **7-print_chessboard.c:** Prints a chessboard.
 - **8-print_diagsums.c:** Prints the sum of diagonals in a square matrix.
 - **100-set_string.c:** Sets the value of a char pointer.
-
-### Additional Information
-- An advanced task involves obtaining a password for the [crackme2](https://github.com/Claudia-O-A/0x06.c) executable, with detailed instructions provided.
+- **Advanced:** password
