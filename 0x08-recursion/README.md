@@ -1,0 +1,1 @@
+This repository has functions that cover a range of operations, from printing strings recursively to calculating factorials, checking for prime numbers, and comparing strings with wildcard support. Also it includes a header file, main.h, with function prototypes for easy reference. 
