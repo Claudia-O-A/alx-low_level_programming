@@ -1,0 +1,2 @@
+>>**About**
+This project came with various technical requirements, such as using specific editors, adhering to code style guidelines (Betty style), limiting the number of functions per file, and only allowing specific C standard library functions like malloc, free, and exit. The use of _putchar was permitted, and the project required the inclusion of function prototypes in a header file named main.h.
