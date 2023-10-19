@@ -1,0 +1,8 @@
+- "The file `0-print_list.c` defines a function responsible for printing all the elements contained within a `list_t` list."
+- "In `1-list_len.c`, you'll find a function designed to determine the number of elements present in a linked `list_t` list."
+- "The file `2-add_node.c` contains a function that inserts a new node at the beginning of a `list_t` list."
+- "Within `3-add_node_end.c`, there's a function that appends a new node to the end of a `list_t` list."
+- "The file `4-free_list.c` houses a function used for deallocating memory associated with a `list_t` list."
+- "`100-first.c` comprises a function that prints a sentence before the `main` function is executed."
+- "`101-hello_holberton.asm` represents a 64-bit assembly program that outputs 'Hello, Holberton' followed by a new line."
+- "The header file `lists.h` serves as the place where the `list_t` struct definition and the prototypes for the previously mentioned functions are declared."
