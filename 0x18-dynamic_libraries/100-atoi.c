@@ -1,28 +1,37 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
- * *_strchr - locates a character in a string
- * @s: string to search
- * @c: char to find
- *
- * Return: a pointer to the first occurrence of the character
- * c in the string s, or NULL if the character is not found
+ * _atoi - converts string to an integer
+ * @s: input string
+ * Return: the result of the conversion or 0 if there is no number in string
  */
-char *_strchr(char *s, char c)
+int _atoi(char *s)
 {
-		int a;
+	unsigned int i, number;
 
-		while (1)
+	number = 0;
+	i = 0;
+	while (s[i] != '\0')/* check for numbers */
+	{
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			a = *s++;
-			if (a == c)
+			while (s[i])
 			{
-				return (s - 1);
+				if (!(s[i] >= '0' && s[i] <= '9'))
+					break;
+				number = (number * 10) + (s[i] - '0');
+				i++;
 			}
-			if (a == 0)
-			{
-				return (NULL);
-			}
+			break;
 		}
+		i++;
+	}
+	i = 0;
+	while (s[i] != '0')/*check for the sign*/
+	{
+		if (s[i] == '-')
+			number = number * (-1);
+		if (s[i] >= '0' && s[i] <= '9')
+			break;
+		i++;
+	}
+	return (number);
 }

@@ -1,12 +1,26 @@
-#include "hash_tables.h"
-
+#include<stddef.h>
 /**
- * key_index - function that get the index where key/value is stored
- * @key: type pointer char of key index
- * @size: type pointer char the size of the array
- * Return: Index of the key
+ * _strpbrk - searches a string for any set of bytes
+ * @s: string checked
+ * @accept: sub-bytes
+ * Return: pointer to the byte in s that matches one of the bytes in accept
+ * otherwise NULL
  */
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
+char *_strpbrk(char *s, char *accept)
 {
-	return (hash_djb2(key) % size);
+	int i, j;
+
+	i = 0;
+	while (s[i])
+	{
+		j = 0;
+		while (accept[j])
+		{
+			if (s[i] == accept[j])
+				return (&s[i]);
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
 }

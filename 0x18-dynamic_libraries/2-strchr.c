@@ -1,16 +1,21 @@
-#include "main.h"
-
 /**
- * _puts - prints a string to stdout
- * @str: pointer to the string to print
+ * _strchr - locates a character in a string
+ * @s: string to be searched
+ * @c: character to be searched for
+ * Return: pointer to the first occurance
  */
-void _puts(char *str)
+char *_strchr(char *s, char c)
 {
-	int i;
+	unsigned int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	i = 0;
+	while (s[i])
 	{
-		_putchar(str[i]);
+		if (s[i] == c)
+			return (s + i);
+		i++;
 	}
-	_putchar('\n');
+	if (*(s + i) == c)
+		return (s + i);
+	return ('\0');
 }

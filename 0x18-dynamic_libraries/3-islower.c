@@ -1,27 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * *_strstr - locates a substring
- * @haystack: string to search in
- * @needle: substring to look for
+ * _islower - checks if an alphabet char is in lower case
+ * @c: character input
  *
- * Return: pointer to the beginning of the located substring
- * or NULL if the substring is not found
+ * Return: 1 if char is lower otherwise 0
  */
-char *_strstr(char *haystack, char *needle)
+int _islower(int c)
 {
-	int i, j;
-
-	for (i = 0; haystack[i] != '\0'; i++)
-	{
-		for (j = 0; needle[j] != '\0'; j++)
-		{
-			if (haystack[i + j] != needle[j])
-				break;
-		}
-		if (!needle[j])
-			return (&haystack[i]);
-	}
-	return (NULL);
+	if (c >= 97 && c <= 122)
+		return (1);
+	else
+		return (0);
 }

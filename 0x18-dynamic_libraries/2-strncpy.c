@@ -1,11 +1,17 @@
-#include "main.h"
-
 /**
- * _isalpha - checks for alphabetic character
- * @c: the character to be checked
- * Return: 1 if c is a letter, 0 otherwise
+ * _strncpy - copies a string to another
+ * @dest: destination string
+ * @src: source string
+ * @n: number of characters to copy
+ * Return: pointer to the result string
  */
-int _isalpha(int c)
+char *_strncpy(char *dest, char *src, int n)
 {
-	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	int i;
+
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		*(dest + i) = *(src + i);
+	for ( ; i < n; i++)
+		dest[i] = '\0';
+	return (dest);
 }
